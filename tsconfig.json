@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "target": "es6",
+    "listFiles": true,
+    "outDir": "./bin/"
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "compileOnSave": true
+}

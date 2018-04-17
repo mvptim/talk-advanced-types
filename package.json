@@ -1,0 +1,18 @@
+{
+  "name": "talk-advanced-types",
+  "version": "1.0.0",
+  "description": "Live Coding Examples for an Company Internal Talk about 'Advanced TypeScript Types'",
+  "scripts": {
+    "compile": "tsc",
+    "compile-watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvptim/talk-advanced-types.git"
+  },
+  "author": "Tim Schauder",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^2.8.1"
+  }
+}
