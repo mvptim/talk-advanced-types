@@ -1,9 +1,15 @@
 {
   "compilerOptions": {
     "module": "system",
-    "target": "es6",
+    "target": "es5",
     "listFiles": true,
-    "outDir": "./bin/"
+    "outDir": "./bin/",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true
   },
   "include": [
     "./src/**/*"
