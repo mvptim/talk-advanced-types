@@ -4,7 +4,7 @@ namespace TaggedUnionTypes {
    * The type never can be used for exhaustiveness checks
    * */
 
-  type Pet = Bird | Fish /*| Dog*/
+  type Pet = Bird | Fish /*| Dog*/ 
 
   interface Bird {
     kind: 'bird'
