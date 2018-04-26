@@ -1,10 +1,10 @@
 namespace TaggedUnionTypes {
   /**
-   * Tagged union types enable you to narrow a type using an runtime tag
-   * The type never can be used for exhaustiveness checks
+   * tagged union types enable you to narrow a type using an runtime tag
+   * the type 'never' can be used for exhaustiveness checks
    * */
 
-  type Pet = Bird | Fish /*| Dog*/ 
+  type Pet = Bird | Fish /*| Dog*/
 
   interface Bird {
     kind: 'bird'
