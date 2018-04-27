@@ -1,4 +1,4 @@
-namespace UnionTypes {
+module UnionTypes {
   /**
    * only members that are common to all types in the union can be accessed
    * type assertion enables you to access all members

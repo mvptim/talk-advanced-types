@@ -1,25 +1,26 @@
-namespace TaggedUnionTypes {
+module TaggedUnionTypes {
   /**
    * tagged union types enable you to narrow a type using an runtime tag
    * the type 'never' can be used for exhaustiveness checks
    * */
 
   type Pet = Bird | Fish /*| Dog*/
+  enum Kind { Bird, Fish, Dog }
 
   interface Bird {
-    kind: 'bird'
+    kind: Kind.Bird
     fly(): void
     layEggs(): void
   }
 
   interface Fish {
-    kind: 'fish'
+    kind: Kind.Fish
     swim(): void
     layEggs(): void
   }
 
   interface Dog {
-    kind: 'dog'
+    kind: Kind.Dog
     run(): void
   }
 
@@ -28,10 +29,10 @@ namespace TaggedUnionTypes {
     /** uses type tags to narrow the type 'Pet' */
     public static move(pet: Pet): void {
       switch (pet.kind){
-        case 'bird':
+        case Kind.Bird:
           pet.fly()
           break
-        case 'fish':
+        case Kind.Fish:
           pet.swim()
           break
         default:

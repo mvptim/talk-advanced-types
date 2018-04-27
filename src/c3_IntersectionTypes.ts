@@ -1,4 +1,4 @@
-namespace IntersectionTypes {
+module IntersectionTypes {
   /**
    * intersection types allow you to combine multiple types into one mixin type
    * */
@@ -17,7 +17,7 @@ namespace IntersectionTypes {
 
   class PetProcessor {
 
-    public static createFlyingFish(fish: Fish, bird: Bird): FlyingFish{
+    public static createFlyingFish(fish: Fish, bird: Bird): FlyingFish {
       return PetProcessor.merge(fish, bird)
     }
 
