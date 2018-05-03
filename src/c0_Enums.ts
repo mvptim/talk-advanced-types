@@ -2,7 +2,7 @@ module Enums {
   /**
    * unless otherwise defined, enums are numerical by default and do automatically increment
    * except for const declared enums, they are actual objects at runtime and can be passed to functions
-   * constant enums with literal enum members can be used like types
+   * enums with literal enum members can be used like types
    * they can also be treated as union type of their members
    * only numeric enums include reverse mapping
    * */
@@ -16,6 +16,7 @@ module Enums {
     Male = 1,
     Female,
     Ze,
+    Xi,
     Cat,
     Apache
   }
@@ -33,8 +34,7 @@ module Enums {
     constructor(sex: Sex = Sex.Male, gender: Gender.Female) {
       this.sex = sex
       this.gender = gender
-      // if (this.sex !== Sex.Male || this.sex !== Sex.Female) console.log('this should never happen')
-      const testGender: string = Gender[this.gender]
+      // if (this.sex !== Sex.Male || this.sex !== Sex.Female) console.log('hello')
     }
 
     public getGenderName(): string {
