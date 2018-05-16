@@ -19,10 +19,10 @@ module TaggedUnionTypes {
     layEggs(): void
   }
 
-  interface Dog {
-    kind: Kind.Dog
-    run(): void
-  }
+  // interface Dog {
+  //   kind: Kind.Dog
+  //   run(): void
+  // }
 
   class PetProcessor {
 

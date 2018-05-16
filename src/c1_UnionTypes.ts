@@ -20,7 +20,7 @@ module UnionTypes {
   class PetProcessor {
 
     /** uses the type guard 'isFish' to narrow the type 'Pet' */
-    public static layEggsAndFlee(pet: Bird | Fish): void {
+    public static layEggsAndFlee(pet: Pet): void {
       pet.layEggs()
       if (PetProcessor.isFish(pet)) {
         pet.swim()

@@ -17,18 +17,16 @@ module MappedTypes {
     intelligence: 8,
     charisma: 8
   }
-  smallDogConfig.strength = 5
 
   // homomorphic type mapping
-  type Constant<S> = {
+  type Readonly<S> = {
     readonly [Key in keyof S]: S[Key]
   }
 
-  const smallDogConfigReadonly: Constant<Pet> = {
+  const smallDogConfigReadonly: Readonly<Pet> = {
     strength: 4,
     constitution: 7,
     intelligence: 8,
     charisma: 8
   }
-  // smallDogConfigReadonly.strength = 5
 }
