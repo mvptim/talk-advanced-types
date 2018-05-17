@@ -36,7 +36,8 @@ module TaggedUnionTypes {
           pet.swim()
           break
         default:
-          ((x:never) => {})(pet)
+          const x: never = pet
+          // ((x:never) => {})(pet)
       }
     }
   }
